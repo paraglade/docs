@@ -59,7 +59,7 @@ For HA air gap configurations, there are two recommended options for the source 
 
 Based on the choice your made in [B. Choose your SSL Configuration](#b-optional-install-cert-manager), complete one of the procedures below.
 
-The [System Charts](https://github.com/rancher/system-charts) repository contains all the catalog items required for features such as monitoring, logging, alerting and global DNS. 
+The [System Charts](https://github.com/rancher/system-charts) repository contains all the catalog items required for features such as monitoring, logging, alerting and global DNS.
 
 {{% tabs %}}
 {{% tab "Option A: Default Self-Signed Certificate" %}}
@@ -120,7 +120,7 @@ By default, Rancher generates a CA and uses cert-manager to issue the certificat
 ## D. Render the Rancher Helm Template
 
 Render the Rancher template, declaring your chosen options. Use the reference table below to replace each placeholder. Rancher needs to be configured to use the private registry in order to provision any Rancher launched Kubernetes clusters or Rancher tools. You can set the the extra environment variable `extraEnv` to use the same `name` and `value` keys as the container manifest definitions.
-    
+
 Placeholder | Description
 ------------|-------------
 `<VERSION>` | The version number of the output tarball.
